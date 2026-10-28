@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>平陆运河｜通江达海，向海图强</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: "Microsoft YaHei", system-ui, sans-serif;
+        }
+        body {
+            background-color: #f5f7fa;
+            color: #2c3e50;
+            line-height: 1.7;
+        }
+        nav {
+            background: linear-gradient(90deg, #0f4c81, #1a659e);
+            padding: 16px 0;
+            position: sticky;
+            top:0;
+            z-index:99;
+        }
+        .nav-wrap {
+            max-width:1200px;
+            margin:0 auto;
+            display:flex;
+            justify-content: space-between;
+            align-items:center;
+            padding:0 20px;
+        }
+        .logo {
+            color:#fff;
+            font-size:22px;
+            font-weight:bold;
+        }
+        .nav-links a {
+            color:#fff;
+            text-decoration:none;
+            margin-left:24px;
+            transition: 0.3s;
+        }
+        .nav-links a:hover {
+            color:#7ed6df;
+        }
+        /* 轮播区域 */
+        .slider-wrap {
+            width:100%;
+            height:460px;
+            overflow:hidden;
+            position:relative;
+        }
+        .slider {
+            display:flex;
+            width:300%;
+            height:100%;
+            animation: slide 16s infinite linear;
+        }
+        .slide-item {
+            width:100%;
+            height:100%;
+        }
+        .slide-item img {
+            width:100%;
+            height:100%;
+            object-fit:cover;
+        }
+        @keyframes slide {
+            0%,28% {transform: translateX(0);}
+            33%,61% {transform: translateX(-100%);}
+            66%,95% {transform: translateX(-200%);}
+            100% {transform: translateX(0);}
+        }
+        .slider-text {
+            position:absolute;
+            left:0;
+            top:0;
+            width:100%;
+            height:100%;
+            background: rgba(0,20,40,0.45);
+            display:flex;
+            flex-direction:column;
+            justify-content:center;
+            align-items:center;
+            color:white;
+        }
+        .slider-text h1 {
+            font-size:44px;
+            text-shadow:0 2px 12px #0004;
+            margin-bottom:12px;
+        }
+        .slider-text p {
+            font-size:18px;
+            letter-spacing:2px;
+        }
+        .container {
+            max-width:1100px;
+            margin:60px auto;
+            padding:0 22px;
+        }
+        .section-title {
+            text-align:center;
+            font-size:28px;
+            color:#0f4c81;
+            margin-bottom:36px;
+            position:relative;
+        }
+        .section-title::after {
+            content:"";
+            display:block;
+            width:70px;
+            height:3px;
+            background:#1a659e;
+            margin:10px auto;
+        }
+        .card-grid {
+            display:grid;
+            grid-template-columns: repeat(auto-fit, minmax(320px,1fr));
+            gap:28px;
+            margin-bottom:60px;
+        }
+        .card {
+            background:#fff;
+            border-radius:14px;
+            box-shadow: 0 8px 24px rgba(15,76,129,0.12);
+            overflow:hidden;
+            transition: 0.35s ease;
+        }
+        .card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 14px 32px rgba(15,76,129,0.18);
+        }
+        .card img {
+            width:100%;
+            height:200px;
+            object-fit:cover;
+        }
+        .card-body {
+            padding:22px;
+        }
+        .card h3 {
+            color:#0f4c81;
+            margin-bottom:12px;
+            font-size:20px;
+        }
+        .card p {
+            color:#444;
+            font-size:15px;
+        }
+        .text-block {
+            background:#fff;
+            border-radius:14px;
+            padding:32px;
+            box-shadow:0 8px 24px rgba(15,76,129,0.1);
+            margin-bottom:40px;
+        }
+        .text-block h3 {
+            color:#0f4c81;
+            margin-bottom:14px;
+            font-size:21px;
+        }
+        footer {
+            background:#0f4c81;
+            color:#fff;
+            text-align:center;
+            padding:24px;
+            margin-top:40px;
+        }
+        @media(max-width:768px){
+            .slider-wrap {height:320px;}
+            .slider-text h1 {font-size:28px;}
+            .nav-links a {margin-left:12px;font-size:14px;}
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="nav-wrap">
+            <div class="logo">平陆运河科普</div>
+            <div class="nav-links">
+                <a href=" ">历史溯源</a >
+                <a href="#value">当代价值</a >
+                <a href="#economy">经济意义</a >
+            </div>
+        </div>
+    </nav>
+
+    <!-- 轮播 -->
+    <div class="slider-wrap">
+        <div class="slider">
+            <div class="slide-item">
+                < img src="https://pic.rmb.bdstatic.com/bjh/9802060138314083301.jpeg" alt="平陆运河">
+            </div>
+            <div class="slide-item">
+                < img src="https://pic.rmb.bdstatic.com/bjh/9802060138314083302.jpeg" alt="运河航道">
+            </div>
+            <div class="slide-item">
+                < img src="https://pic.rmb.bdstatic.com/bjh/9802060138314083303.jpeg" alt="通航盛况">
+            </div>
+        </div>
+        <div class="slider-text">
+            <h1>平陆运河</h1>
+            <p>新中国第一条江海连通运河｜西部陆海新通道骨干工程</p >
+        </div>
+    </div>
+
+    <div class="container">
+        <section id="history">
+            <h2 class="section-title">历史溯源</h2>
+            <div class="text-block">
+                <h3>百年构想，今朝圆梦</h3>
+                <p>早在《建国方略》中，孙中山先生就提出打通广西内河、连通北部湾出海口的构想。受时代条件限制，设想长期未能落地。新中国成立后，相关勘测、论证工作持续推进。进入新时代，平陆运河正式开工建设，打通西江干流与北部湾，结束广西内河没有直接出海通道的历史，让百年蓝图变为现实。</p >
+            </div>
+        </section>
+
+        <section id="value">
+            <h2 class="section-title">当代价值</h2>
+            <div class="card-grid">
+                <div class="card">
+                    < img src="https://pic.rmb.bdstatic.com/bjh/transport.jpeg" alt="航运">
+                    <div class="card-body">
+                        <h3>航运提质</h3>
+                        <p>大幅缩短西南货物出海航程，水运运量大、成本低，减少陆路运输压力，构建高效内河—江海联运体系。</p >
+                    </div>
+                </div>
+                <div class="card">
+                    < img src="https://pic.rmb.bdstatic.com/bjh/industry.jpeg" alt="产业">
+                    <div class="card-body">
+                        <h3>带动产业</h3>
+                        <p>带动临港产业、物流园区、加工制造业集聚，拉动沿线城镇发展，创造就业机会，助力乡村振兴。</p >
+                    </div>
+                </div>
+                <div class="card">
+                    < img src="https://pic.rmb.bdstatic.com/bjh/ecology.jpeg" alt="生态">
+                    <div class="card-body">
+                        <h3>生态与防洪</h3>
+                        <p>兼顾防洪排涝、水资源调配，同步实施生态保护工程，实现工程建设和生态保护协调共生。</p >
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="economy">
+            <h2 class="section-title">对中国经济发展的战略意义</h2>
+            <div class="text-block">
+                <h3>服务双循环，赋能西部开放</h3>
+                <p>平陆运河是西部陆海新通道骨干工程，打通西南地区最便捷的出海通道。它助力西南内陆省份对接东盟市场，深化中国—东盟经贸合作；优化全国水运布局，降低外贸物流成本，推动国内国际双循环。
+                <br><br>
+                它补齐广西向海经济短板，带动西部内陆对外开放，改变西部很多地区“有江无海”的格局，对区域协调发展、高水平对外开放有着长远战略价值。</p >
+            </div>
+        </section>
+    </div>
+
+    <footer>
+        <p>平陆运河科普网页｜仅供学习展示</p >
+    </footer>
+</body>
+</html>
